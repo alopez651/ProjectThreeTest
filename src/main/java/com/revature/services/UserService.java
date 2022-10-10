@@ -5,9 +5,10 @@ import com.revature.models.User;
 import com.revature.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.nio.file.OpenOption;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Service
 public class UserService {
@@ -25,15 +26,5 @@ public class UserService {
     public User save(User user) {
         return userRepository.save(user);
     }
-
-//    public User getById(int id){
-//        return userRepository.findById(id).get();
-//    }
-//    public List<Post> like(User users){
-//        Post post = new Post();
-//        String like1;
-//        String like2;
-//       // List <Post> likePost
-//    }
 
 }

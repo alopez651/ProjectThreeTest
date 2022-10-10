@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
-import java.util.Set;
 
 @Data
 @Entity
@@ -24,4 +23,11 @@ public class User {
     private String lastName;
 
 
+//    public User(int id, String email, String password, String firstName, String lastName) {
+//        this.id = id;
+//        this.email = email;
+//        this.password = password;
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//    }
 }

@@ -2,9 +2,6 @@ package com.revature.controllers;
 
 import java.util.List;
 
-import com.revature.models.Likes;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,11 +38,4 @@ public class PostController {
     public ResponseEntity<Post> upsertPost(@RequestBody Post post) {
     	return ResponseEntity.ok(this.postService.upsert(post));
     }
-
-//    @Authorized
-//    @PostMapping("/like")
-//    public ResponseEntity<Post> likePosts(@RequestBody Likes likes){
-//        return new ResponseEntity<Post>(postService.likePost(likes), HttpStatus.OK);
-//    }
-
 }

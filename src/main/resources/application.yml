@@ -13,4 +13,6 @@ spring:
     password: password
   h2:
     console.enabled: true
-###//create-drop
+
+#      ddl-auto: create-drop
+

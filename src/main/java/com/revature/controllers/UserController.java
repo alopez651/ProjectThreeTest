@@ -1,6 +1,5 @@
 package com.revature.controllers;
 
-import com.revature.dtos.UserInfor;
 import com.revature.models.User;
 import com.revature.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-//    @GetMapping("/search")
+    //    @GetMapping("/search")
 //    public List<User> findByFirstNameAndLastNameAndEmail(@RequestBody UserInfor userInfor) {
 //        System.out.println(userInfor);
 //        return userService.findByFirstNameAndLastNameAndEmail(userInfor);

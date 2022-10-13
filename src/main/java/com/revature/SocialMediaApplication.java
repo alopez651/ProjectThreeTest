@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource("classpath:test.properties")
+@PropertySource("classpath:prod.properties")
 public class SocialMediaApplication {
 
 	public static void main(String[] args) {

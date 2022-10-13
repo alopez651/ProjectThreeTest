@@ -1,11 +1,11 @@
 --INSERT INTO users (id, email, password, first_name, last_name) VALUES (
---    1,
+--    default,
 --    'testuser@gmail.com',
 --    'password',
 --    'Test',
 --    'User'
 --);
---
+----
 --INSERT INTO posts (id, text, image_url, author_id) VALUES (
 --    10000,
 --    'The classic',
@@ -18,8 +18,3 @@
 --    '',
 --    1
 --);
---
---
-----create table if not exists users(id serial primary key, email varchar(50)unique, password varchar(20),first_name text, last_name varchar(30));
-----
-----create table if not exists posts(id serial primary key, texts varchar(50), image_url varchar(100), author_id integer);

@@ -9,11 +9,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
+//@CrossOrigin(origins = "*")
 public class AuthController {
 
     private final AuthService authService;
@@ -41,6 +43,7 @@ public class AuthController {
 
         return ResponseEntity.ok().build();
     }
+
 
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody RegisterRequest registerRequest) {

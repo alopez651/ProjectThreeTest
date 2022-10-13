@@ -1,6 +1,7 @@
 package com.revature.models;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.*;
 
@@ -22,8 +23,10 @@ public class Post {
 	private String imageUrl;
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<Post> comments;
+	@ManyToMany
+	private Set<User> likes;
 	@ManyToOne
 	private User author;
-	@ManyToMany
-	private List<User>likes;
+
+
 }

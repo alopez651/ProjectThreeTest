@@ -14,20 +14,24 @@ import java.util.List;
 @Table(name = "users")
 public class User {
 
+   /* public User(int ids, String emails, String pword, String fName, String lName) {
+        this.id = ids;
+        this.email=emails;
+        this.password=pword;
+        this.firstName=fName;
+        this.lastName=lName;
+    }
+
+    */
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(unique = true)
     private String email;
     private String password;
     private String firstName;
     private String lastName;
-
-
-//    public User(int id, String email, String password, String firstName, String lastName) {
-//        this.id = id;
-//        this.email = email;
-//        this.password = password;
-//        this.firstName = firstName;
-//        this.lastName = lastName;
-//    }
+   // @ManyToMany
+   // private List<User> likes;
 }

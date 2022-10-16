@@ -22,8 +22,8 @@ import javax.servlet.http.HttpSession;
 
 @RestController
 @RequestMapping("/post")
-//@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
+//@CrossOrigin(origins = "*")
 public class PostController {
 
 	private final PostService postService;

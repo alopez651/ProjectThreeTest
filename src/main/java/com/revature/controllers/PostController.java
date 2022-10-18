@@ -34,13 +34,13 @@ public class PostController {
         this.postService = postService;
     }
     
-    
+    @Authorized
     @GetMapping
     public ResponseEntity<List<Post>> getAllPosts() {
     	return ResponseEntity.ok(this.postService.getAll());
     }
     
-    
+    @Authorized
     @PutMapping
     public ResponseEntity<Post> upsertPost(@RequestBody Post post) {
 
